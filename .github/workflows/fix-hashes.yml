@@ -25,7 +25,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config pull.rebase >&- || git config pull.rebase false
           git config remote.upstream.url >&- || git remote add upstream https://github.com/pfassina/lazyvim-nix.git
-          git pull upstream main -X theirs --no-edit
+          git pull upstream main -X theirs --no-edit --allow-unrelated-histories
 
       - uses: DeterminateSystems/determinate-nix-action@v3
 
