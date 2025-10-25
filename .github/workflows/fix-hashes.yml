@@ -1,3 +1,14 @@
+name: Update LazyVim From Upstream And Fix Hashes
+
+on:
+  schedule:
+    # Run daily at 3 AM UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
 jobs:
   build:
     permissions:
