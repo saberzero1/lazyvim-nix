@@ -21,9 +21,9 @@ jobs:
 
       - name: Update from upstream
         run: |
-          git remote add upstream https://github.com/pfassina/lazyvim-nix.git
+          # git remote add upstream https://github.com/pfassina/lazyvim-nix.git
           git config pull.rebase true
-          git pull -X theirs remote upstream
+          # git pull -X theirs remote upstream
 
       - uses: DeterminateSystems/determinate-nix-action@v3
 
